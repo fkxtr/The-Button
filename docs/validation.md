@@ -20,6 +20,7 @@ distribution were not reused.
 | Live public-source smoke check | Executed, blocked by the environment's proxy policy; no successful real download verified. |
 | Linux release bundle | Built `boton_0.1.0_amd64.deb` (3.64 MiB); valid Debian metadata; installed successfully on Ubuntu 24.04; all runtime libraries resolved. |
 | Native window, input, and animation | Installed release opened its real 520 × 360 Tauri window under Xvfb; clicking entered the busy state and then displayed the expected network error. |
+| Native cancellation and close | Escape during discovery restored idle. A real `WM_DELETE_WINDOW` request during discovery exited successfully with no partial files left in Downloads. |
 | Web Audio click | Captured from the application through a PulseAudio null-sink monitor: 2,775 nonzero samples, peak 1,271 in signed 16-bit PCM. This verifies synthesized output, not subjective listening quality. |
 | Windows compilation and runtime | Not run. |
 
