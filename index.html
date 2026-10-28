@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="One button. One random file. Absolute uncertainty." />
+    <title>BOTÓN</title>
+  </head>
+  <body>
+    <main id="app" data-phase="idle">
+      <div class="button-stage">
+        <div class="button-housing">
+          <button id="button" type="button" aria-label="Download a surprise file" aria-describedby="status hint" disabled>
+            <span class="button-label">BOTÓN</span>
+            <span class="button-light" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="feedback">
+        <p id="status" role="status" aria-live="polite" aria-atomic="true">A little uncertainty.</p>
+        <p id="hint">Press to discover.</p>
+      </div>
+      <button id="cancel" class="cancel" type="button" hidden>Cancel</button>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

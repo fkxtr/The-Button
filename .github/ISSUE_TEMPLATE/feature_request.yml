@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an improvement that preserves the one-button experience.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed behavior
+      description: For a new source, include its public API and usage terms.
+    validations:
+      required: true
